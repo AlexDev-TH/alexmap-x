@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlexMapX — ECU Tuning Software | ซอฟต์แวร์จูนอีซียูระดับมืออาชีพ</title>
+    <meta name="description"
+        content="AlexMapX — ซอฟต์แวร์ปรับจูน ECU ระดับมืออาชีพ สำหรับช่างจูนมอเตอร์ไซค์และรถยนต์ Honda รองรับ TunerPro RT XDF">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══ Navigation ═══ -->
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" class="nav-logo">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>AlexMapX</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">ฟีเจอร์</a>
+                <a href="#screenshots">ภาพตัวอย่าง</a>
+                <a href="#download">ดาวน์โหลด</a>
+                <a href="#changelog">อัปเดต</a>
+            </div>
+            <a href="#download" class="nav-cta">
+                <svg viewBox="0 0 16 16" width="14" height="14">
+                    <path d="M8 2v8M4 7l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 12v2h12v-2" stroke="currentColor" fill="none" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+                ดาวน์โหลด
+            </a>
+        </div>
+    </nav>
+
+    <!-- ═══ Hero Section ═══ -->
+    <section id="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">ECU TUNING SOFTWARE</div>
+            <h1 class="hero-title">
+                <span class="hero-brand">AlexMapX</span>
+                <span class="hero-sub">ซอฟต์แวร์ปรับจูน ECU ไทยแท้<br></span>
+            </h1>
+            <p class="hero-desc">
+                เครื่องมือจูน ECU ครบวงจร — แก้ไขตาราง 3D, ดูข้อมูล Live Data แบบเรียลไทม์,
+                กราฟ 3 มิติ, เปรียบเทียบ BIN และอื่นๆ อีกมากมาย
+            </p>
+            <div class="hero-actions">
+                <a href="#download" class="btn btn-primary">
+                    <svg viewBox="0 0 16 16" width="16" height="16">
+                        <path d="M8 2v8M4 7l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2 12v2h12v-2" stroke="currentColor" fill="none" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    ดาวน์โหลดฟรี
+                </a>
+                <a href="#features" class="btn btn-ghost">
+                    <svg viewBox="0 0 16 16" width="16" height="16">
+                        <circle cx="8" cy="8" r="6" stroke="currentColor" fill="none" stroke-width="1.5" />
+                        <path d="M8 5v6M5 8h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    ดูฟีเจอร์ทั้งหมด
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-val">v1.0.1</span>
+                    <span class="hero-stat-lbl">เวอร์ชันล่าสุด</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-val">Windows</span>
+                    <span class="hero-stat-lbl">รองรับ</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-val">XDF</span>
+                    <span class="hero-stat-lbl">TunerPro Compatible</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Features Section ═══ -->
+    <section id="features">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-badge">FEATURES</span>
+                <h2 class="section-title">ฟีเจอร์ครบครัน<br>สำหรับช่างจูนมืออาชีพ</h2>
+                <p class="section-desc">เครื่องมือทุกอย่างที่คุณต้องการ รวมไว้ในโปรแกรมเดียว</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" fill="none"
+                                stroke-width="1.5" />
+                            <path d="M3 8h18M8 3v18" stroke="currentColor" stroke-width="1.5" />
+                            <circle cx="13" cy="13" r="2" fill="currentColor" opacity="0.5" />
+                            <circle cx="16" cy="16" r="2" fill="currentColor" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3>Table Editor 3D/2D</h3>
+                    <p>แก้ไขตาราง ECU ด้วย Heatmap สีสวย พร้อมระบบ Undo/Redo และ Interpolation อัตโนมัติ</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 3h14a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1z"
+                                stroke="currentColor" fill="none" stroke-width="1.5"
+                                transform="translate(3,3) scale(0.85)" />
+                            <path d="M6 16V10M10 16V8M14 16V6M18 16V4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Live Data แบบเรียลไทม์</h3>
+                    <p>ดูข้อมูล ECM แบบสด — RPM, TPS, ECT, แรงดันแบตเตอรี่, INJ, IGN และ O2 Sensor</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 20L8 10l4 6 4-10 4 14" stroke="currentColor" fill="none" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 20h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>กราฟ 3 มิติ</h3>
+                    <p>แสดงผลตาราง Fuel Map / Ignition Map เป็นกราฟ 3D แบบ Interactive หมุนได้ 360°</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="8" height="18" rx="2" stroke="currentColor" fill="none"
+                                stroke-width="1.5" />
+                            <rect x="14" y="3" width="8" height="18" rx="2" stroke="currentColor" fill="none"
+                                stroke-width="1.5" />
+                            <path d="M10 12h4" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 1.5" />
+                        </svg>
+                    </div>
+                    <h3>BIN Compare</h3>
+                    <p>เปรียบเทียบไฟล์ BIN สองไฟล์ แสดงความแตกต่างแบบ Byte-by-byte พร้อมไฮไลท์</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2h8l6 6v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" stroke="currentColor"
+                                fill="none" stroke-width="1.5" />
+                            <path d="M14 2v6h6" stroke="currentColor" fill="none" stroke-width="1.5" />
+                            <path d="M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>XDF Creator</h3>
+                    <p>สร้าง Definition ใหม่ รองรับ XDF ที่เข้ารหัสของ TunerPro RT ถอดรหัสได้อัตโนมัติ</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><text x="4" y="16" font-size="12" font-family="monospace"
+                                font-weight="bold" fill="currentColor">0x</text>
+                            <path d="M16 6h4v4M16 18h4v-4M16 12h4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Hex Editor</h3>
+                    <p>ดูข้อมูลดิบ Hex ทั้งไฟล์ BIN แก้ไขค่าได้โดยตรง เหมาะสำหรับผู้เชี่ยวชาญ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Screenshots Section ═══ -->
+    <section id="screenshots">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-badge">PREVIEW</span>
+                <h2 class="section-title">ภาพตัวอย่างโปรแกรม</h2>
+                <p class="section-desc">ดูตัวอย่างหน้าจอการทำงานจริงของ AlexMapX</p>
+            </div>
+            <div class="screenshots-grid fade-in">
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-welcome.png" alt="Welcome Screen" loading="lazy">
+                    <div class="screenshot-label">
+                        <svg viewBox="0 0 16 16" width="14" height="14">
+                            <path d="M8 1L1 5l7 4 7-4L8 1zM1 11l7 4 7-4M1 8l7 4 7-4" stroke="currentColor" fill="none"
+                                stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        หน้าหลัก AlexMapX
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-table.png" alt="Table Editor" loading="lazy">
+                    <div class="screenshot-label">
+                        <svg viewBox="0 0 16 16" width="14" height="14">
+                            <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"
+                                stroke-width="1.2" />
+                            <path d="M2 6h12M6 2v12" stroke="currentColor" stroke-width="1.2" />
+                        </svg>
+                        Table Editor 3D
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-dashboard.png" alt="Live Data Dashboard" loading="lazy">
+                    <div class="screenshot-label">
+                        <svg viewBox="0 0 16 16" width="14" height="14">
+                            <path d="M3 3h10a1 1 0 011 1v8a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1z"
+                                stroke="currentColor" fill="none" stroke-width="1.2" />
+                            <path d="M5 10V7M8 10V5M11 10V3" stroke="currentColor" stroke-width="1.2"
+                                stroke-linecap="round" />
+                        </svg>
+                        Live Data Dashboard
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-graph.png" alt="3D Graph" loading="lazy">
+                    <div class="screenshot-label">
+                        <svg viewBox="0 0 16 16" width="14" height="14">
+                            <path d="M2 12L6 6l4 4 4-8" stroke="currentColor" fill="none" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        3D Graph Visualization
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Download Section ═══ -->
+    <section id="download">
+        <div class="section-container">
+            <div class="download-box fade-in">
+                <div class="download-glow"></div>
+                <div class="download-content">
+                    <div class="download-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
+                            <path d="M24 4L4 14l20 10 20-10L24 4z" stroke="url(#dlGrad)" fill="none"
+                                stroke-width="2.5" />
+                            <path d="M4 34l20 10 20-10" stroke="url(#dlGrad)" fill="none" stroke-width="2.5" />
+                            <path d="M4 24l20 10 20-10" stroke="url(#dlGrad)" fill="none" stroke-width="2.5" />
+                            <defs>
+                                <linearGradient id="dlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#7C3AED" />
+                                    <stop offset="100%" stop-color="#A78BFA" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2>ดาวน์โหลด AlexMapX</h2>
+                    <p class="download-version">เวอร์ชันล่าสุด: <strong>v1.0.1</strong></p>
+                    <p class="download-date">อัปเดตล่าสุด: มีนาคม 2026</p>
+                    <div class="download-buttons">
+                        <a href="assets/AlexMapX-Setup-v1.0.1.exe" download class="btn btn-primary btn-lg">
+                            <svg viewBox="0 0 16 16" width="18" height="18">
+                                <path d="M8 2v8M4 7l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 12v2h12v-2" stroke="currentColor" fill="none" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                            ดาวน์โหลดสำหรับ Windows
+                        </a>
+                    </div>
+                    <div class="download-meta">
+                        <span>
+                            <svg viewBox="0 0 16 16" width="12" height="12">
+                                <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" fill="none"
+                                    stroke-width="1.2" />
+                                <path d="M5 5h6M5 8h4M5 11h2" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Windows 10/11
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 16 16" width="12" height="12">
+                                <circle cx="8" cy="8" r="6" stroke="currentColor" fill="none" stroke-width="1.2" />
+                                <path d="M8 4v4l3 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+                            </svg>
+                            ติดตั้งง่าย
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Changelog Section ═══ -->
+    <section id="changelog">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-badge">CHANGELOG</span>
+                <h2 class="section-title">ประวัติการอัปเดต</h2>
+            </div>
+            <div class="changelog-timeline fade-in">
+                <div class="changelog-item">
+                    <div class="changelog-dot"></div>
+                    <div class="changelog-card">
+                        <div class="changelog-ver">v1.0.1 <span class="changelog-tag">LATEST</span></div>
+                        <div class="changelog-date">มีนาคม 2026</div>
+                        <ul>
+                            <li>แก้ไข Live Data parsing ให้แม่นยำยิ่งขึ้น</li>
+                            <li>ปรับปรุง UI ธีมสีม่วงใหม่ทั้งหมด</li>
+                            <li>เปลี่ยน Emoji เป็น SVG Icons</li>
+                            <li>แก้ปัญหา Toolbar overflow เมื่อย่อหน้าต่าง</li>
+                            <li>แก้ปัญหา Title Bar ลากไม่ได้</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="changelog-item">
+                    <div class="changelog-dot"></div>
+                    <div class="changelog-card">
+                        <div class="changelog-ver">v1.0.0</div>
+                        <div class="changelog-date">กุมภาพันธ์ 2026</div>
+                        <ul>
+                            <li>เปิดตัวเวอร์ชันแรก</li>
+                            <li>Table Editor 3D/2D พร้อม Heatmap</li>
+                            <li>3D Graph Visualization</li>
+                            <li>Live Data Dashboard (ECM Connection)</li>
+                            <li>BIN Compare, Hex Editor</li>
+                            <li>รองรับ XDF เข้ารหัสจาก TunerPro RT</li>
+                            <li>ระบบ Undo/Redo สูงสุด 100 ขั้น</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>AlexMapX</span>
+            </div>
+            <div class="footer-links">
+                <a href="#features">ฟีเจอร์</a>
+                <a href="#download">ดาวน์โหลด</a>
+                <a href="#changelog">อัปเดต</a>
+            </div>
+            <div class="footer-contact">
+                <svg viewBox="0 0 16 16" width="14" height="14">
+                    <circle cx="8" cy="8" r="6" stroke="currentColor" fill="none" stroke-width="1.2" />
+                    <path d="M8 5v3l2 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+                ติดต่อ: <strong>FB — Alex Dev</strong>
+            </div>
+            <div class="footer-copy">&copy; 2026 AlexDev-TH. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
